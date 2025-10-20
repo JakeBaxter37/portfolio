@@ -1,0 +1,164 @@
+*{
+    box-sizing: border-box;
+}
+
+/* Nav Bar */
+nav {
+    position: sticky;
+    top: 0;
+    color: #777676;
+    z-index: 100;   
+}
+
+.navUl {
+    background-image: linear-gradient(90deg, #5CA9E6, #0D2570ff);
+}
+
+.white-link {
+    color: white;
+}
+
+/* Main body CSS */
+body {
+    background-color: #efefef; 
+}
+
+/* #cardText {} */
+
+.divCardStyling {
+    background-color: #bebebe;
+    border: 3px solid white;
+    color: #2E2E2E;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.divCardStyling:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+.projectCard{
+    background-color: #bebebe;
+    color: #2E2E2E;
+    margin: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.projectCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+#cardHeaderId{
+    font-size: 40px;
+    text-align: center;
+    background-color: #bebebe;
+    border: 3px solid 77a9d3;
+    color:#2E2E2E;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px; 
+}
+
+.hero{
+    height: 100vh; 
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/hero.jpg') center/cover;
+}
+
+
+/* adds interactivity to rows */
+.plotRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+/* insurses that columns fit next to each other with correct padding */
+.plotCols {
+    flex: 0 0 46%; 
+    max-width: 46%;
+}
+
+/* makes sure that the columns are responsive and stack on top of each other when the screen is smaller than 1200px */
+@media (max-width: 1200px) {
+    .plotCols {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* text of the card in plot */
+.plotCardText {
+    padding: 10px;
+    margin: 10px;
+    color: #2E2E2E;
+    text-align: center;
+    border: black 3px solid;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+
+/* subheadings of the paragraphs in plot */
+.subheading {
+    text-align: center;
+    background-color: #77a9d3;
+    border: 3px solid black;
+    color: #2E2E2E;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;  
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+.heading {
+    text-align: center;
+    background-color: #77a9d3;
+    color: #2E2E2E;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 0px;
+    margin: 20px;  
+    font-family: fantasy;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#projectTitle{
+margin-bottom: 40px;
+}
+
+.button{
+margin: 20px;
+}
+
+
+.heading:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+
+/* footer*/
+.portfolioFooter{
+    text-align: center;
+    color: white;
+    background-color: rgb(40, 42, 46); 
+    padding: 10px;
+}
+
+
+/* paragraph text size in plot */
+.para {
+    font-size: 18px;
+}
+
+

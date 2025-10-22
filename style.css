@@ -2,22 +2,6 @@
     box-sizing: border-box;
 }
 
-/* Nav Bar */
-nav {
-    position: sticky;
-    top: 0;
-    color: #777676;
-    z-index: 100;   
-}
-
-.navUl {
-    background-image: linear-gradient(90deg, #5CA9E6, #0D2570ff);
-}
-
-.white-link {
-    color: white;
-}
-
 /* Main body CSS */
 body {
     background-color: #efefef; 
@@ -66,40 +50,6 @@ body {
 .hero{
     height: 100vh; 
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/hero.jpg') center/cover;
-}
-
-
-/* adds interactivity to rows */
-.plotRow {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-
-/* insurses that columns fit next to each other with correct padding */
-.plotCols {
-    flex: 0 0 46%; 
-    max-width: 46%;
-}
-
-/* makes sure that the columns are responsive and stack on top of each other when the screen is smaller than 1200px */
-@media (max-width: 1200px) {
-    .plotCols {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-}
-
-/* text of the card in plot */
-.plotCardText {
-    padding: 10px;
-    margin: 10px;
-    color: #2E2E2E;
-    text-align: center;
-    border: black 3px solid;
-    border-radius: 10px;
-    font-size: 18px;
 }
 
 
